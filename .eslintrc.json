@@ -1,0 +1,81 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "airbnb-base",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "global-require": 0,
+    "no-undef": "off",
+    "class-methods-use-this": "off",
+    "no-param-reassign": "off",
+    "camelcase": "off",
+    "no-nested-ternary": "off",
+    "@typescript-eslint/camelcase": "off",
+    // "@typescript-eslint/interface-name-prefix":["warn", {
+    //   "prefixWithI": "always"
+    // }],
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/consistent-type-assertions": "off",
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "next" }],
+    "linebreak-style": 0,
+    "import/export": "off",
+    "import/prefer-default-export": "off",
+    "no-useless-constructor": "off",
+    "import/no-unresolved": "off",
+    "dot-notation": "off",
+    "prefer-const": "off",
+    "no-useless-return": "off",
+    "no-else-return": "off",
+    "array-callback-return": "off",
+    "consistent-return": "off",
+    "no-await-in-loop": "off",
+    "no-restricted-syntax": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-expressions": [
+      "warn",
+      {
+        "allowShortCircuit": true,
+        "allowTernary": true
+      }
+    ],
+    "@typescript-eslint/no-var-requires": 0,
+    "import/no-named-as-default": 0,
+    "import/no-cycle": 0,
+    "import/extensions": [
+      "warn",
+      "ignorePackages",
+      {
+        "js": "never",
+        "mjs": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "semi": true
+      }
+    ]
+  }
+}
