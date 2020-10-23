@@ -13,7 +13,7 @@ const databaseConnect = async (): Promise<void> => {
     password: process.env.DB_PASS,
     database: process.env.DB_NAME,
     logging: false,
-    synchronize: false,
+    synchronize: (process.env.DB_SYNC as unknown) as boolean,
     entities: ['src/domains/**/infra/typeorm/entities/*.ts'],
   });
   logger.info('Connected to database');
