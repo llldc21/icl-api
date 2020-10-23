@@ -1,1 +1,2 @@
-web: yarn install && yarn start 
+web: yarn install
+web: yarn start 
