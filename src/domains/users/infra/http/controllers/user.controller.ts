@@ -2,7 +2,7 @@ import { Controller, Get } from '@overnightjs/core';
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
-import UsersListService from '../../../services/usersList.service';
+import UsersListService from '../../../services/listUsers.service';
 
 @Controller('users')
 export default class UserController {
