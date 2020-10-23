@@ -23,7 +23,7 @@ class App extends Server {
   private expressSetup(): void {
     this.server.use(express.json());
     this.server.use(express.urlencoded({ extended: true }));
-    this.server.use(morgan('short'));
+    this.server.use(morgan('dev'));
     this.server.use(cors());
   }
 
