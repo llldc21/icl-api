@@ -19,13 +19,14 @@ export default class Users {
   email!: string;
 
   @Column()
+  @Exclude()
   password!: string;
 
-  @CreateDateColumn({ name: 'created_at', default: new Date() })
+  @CreateDateColumn({ name: 'created_at' })
   @Exclude()
   createdAt!: Date;
 
-  @UpdateDateColumn({ name: 'updated_at', default: new Date() })
+  @UpdateDateColumn({ name: 'updated_at' })
   @Exclude()
   updatedAt!: Date;
 }
